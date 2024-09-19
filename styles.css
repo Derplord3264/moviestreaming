@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+#searchBar {
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+#movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.movieTile {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: 200px;
+}
+
+.movieTile:hover {
+    transform: translateY(-10px);
+}
+
+.moviePoster {
+    width: 100%;
+}
+
+.movieTitle {
+    padding: 1rem;
+    text-align: center;
+}
