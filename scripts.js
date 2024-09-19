@@ -2,6 +2,7 @@ const movies = [
     { title: "Free Guy", poster: "posters/freeguy.jpg" },
     { title: "Oppenheimer", poster: "posters/oppenheimer.jpg" },
     { title: "Top Gun: Maverick", poster: "posters/tpgun.jpg" }
+    // Add more movies here
 ];
 
 const movieList = document.getElementById('movieList');
