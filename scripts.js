@@ -1,8 +1,14 @@
 const movies = [
-    { title: "Free Guy", poster: "posters/freeguy.jpg" },
-    { title: "Oppenheimer", poster: "posters/oppenheimer.jpg" },
-    { title: "Top Gun: Maverick", poster: "posters/tpgun.jpg" }
-    // Add more movies here
+    { title: "Free Guy", poster: "posters/freeguy.jpg", path: "movies/freeguy/index.html" },
+    { title: "Oppenheimer", poster: "posters/oppenheimer.jpg", path: "movies/oppenheimer/index.html" },
+    { title: "Top Gun: Maverick", poster: "posters/tpgun.jpg", path: "movies/topgun/index.html" },
+    { title: "John Wick: Chapter 1", poster: "posters/johnwick1.jpg", path: "movies/johnwick1/index.html" },
+    { title: "John Wick: Chapter 2", poster: "posters/johnwick2.jpg", path: "movies/johnwick2/index.html" },
+    { title: "John Wick: Chapter 3", poster: "posters/johnwick3.jpg", path: "movies/johnwick3/index.html" },
+    { title: "John Wick: Chapter 4", poster: "posters/johnwick4.jpg", path: "movies/johnwick4/index.html" },
+    { title: "Dune", poster: "posters/dune1.jpg", path: "movies/dune1/index.html" },
+    { title: "Dune: Part Two", poster: "posters/dune2.jpg", path: "movies/dune2/index.html" },
+    { title: "Finding Nemo", poster: "posters/nemo.jpg", path: "movies/nemo/index.html" }
 ];
 
 const movieList = document.getElementById('movieList');
@@ -13,6 +19,9 @@ function displayMovies(movies) {
     movies.forEach(movie => {
         const movieTile = document.createElement('div');
         movieTile.classList.add('movieTile');
+        movieTile.addEventListener('click', () => {
+            window.location.href = movie.path;
+        });
         
         const moviePoster = document.createElement('img');
         moviePoster.src = movie.poster;
