@@ -10,6 +10,9 @@ const movies = [
     { title: "Dune: Part Two", poster: "posters/dune2.jpg", path: "movies/dune2/index.html" },
     { title: "Finding Nemo", poster: "posters/nemo.jpg", path: "movies/nemo/index.html" },
     { title: "Inside Out 2", poster: "posters/insideout2.jpg", path: "movies/insideout2/index.html" },
+    { title: "The Matrix", poster: "posters/matrix.jpg", path: "movies/matrix/index.html" },
+    { title: "Jumanji: Welcome to the Jungle", poster: "posters/jumanji1.jpg", path: "movies/jumanji1/index.html" },
+    { title: "Jumanji: The Next Level", poster: "posters/jumanji2.jpg", path: "movies/jumanji2/index.html" }
 ];
 
 const movieList = document.getElementById('movieList');
