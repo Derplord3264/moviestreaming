@@ -11,8 +11,6 @@ const movies = [
     { title: "Finding Nemo", poster: "posters/nemo.jpg", path: "movies/nemo/index.html" },
     { title: "Inside Out 2", poster: "posters/insideout2.jpg", path: "movies/insideout2/index.html" },
     { title: "The Matrix", poster: "posters/matrix.jpg", path: "movies/matrix/index.html" },
-    { title: "Jumanji: Welcome to the Jungle", poster: "posters/jumanji1.jpg", path: "movies/jumanji1/index.html" },
-    { title: "Jumanji: The Next Level", poster: "posters/jumanji2.jpg", path: "movies/jumanji2/index.html" },
     { title: "Monty Python and the Holy Grail", poster: "posters/holygrail.jpg", path: "movies/holygrail/index.html" },
     { title: "No Time to Die", poster: "posters/notimetodie.jpg", path: "movies/notimetodie/index.html" },
     { title: "The Imitation Game", poster: "posters/imitationgame.jpg", path: "movies/imitationgame/index.html" },
