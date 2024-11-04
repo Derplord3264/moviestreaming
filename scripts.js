@@ -26,7 +26,10 @@ function displayMovies(movies) {
         const movieTile = document.createElement('div');
         movieTile.classList.add('movieTile');
         movieTile.addEventListener('click', () => {
-            window.location.href = movie.path;
+            movieTile.classList.add('click-animate');
+            setTimeout(() => {
+                window.location.href = movie.path;
+            }, 300); // Adjust duration to match animation timing
         });
         
         const moviePoster = document.createElement('img');
