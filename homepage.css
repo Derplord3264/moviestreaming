@@ -7,13 +7,6 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    background-color: #1f1f1f;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
 .welcome-section {
     display: flex;
     flex-direction: column;
@@ -45,4 +38,15 @@ button:hover {
 
 button:active {
     transform: scale(0.95);
+}
+
+.kotext{
+  font:bold 10rem 'Helvetica', Sans-serif;
+  text-align: center;
+  background-image:url(https://images.pexels.com/photos/1222561/pexels-photo-1222561.jpeg?cs=srgb&dl=pexels-phantomant-1222561.jpg&fm=jpg);
+  
+  -webkit-background-clip: text;
+/*   -webkit-text-fill-color: transparent; */
+  color: transparent;
+  
 }
