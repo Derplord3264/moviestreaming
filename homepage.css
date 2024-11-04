@@ -40,10 +40,17 @@ button:active {
     transform: scale(0.95);
 }
 
+footer {
+    background-color: #1f1f1f;
+    color: #cccccc;
+    padding: 1rem;
+    text-align: center;
+}
+
 .kotext{
-  font:bold 10rem 'Helvetica', Sans-serif;
+  font:bold 'Helvetica', Sans-serif;
   text-align: center;
-  background-image:url(https://images.pexels.com/photos/1222561/pexels-photo-1222561.jpeg?cs=srgb&dl=pexels-phantomant-1222561.jpg&fm=jpg);
+  background-image:url(https://img.freepik.com/premium-photo/amazing-landscapes-view-mountain-with-gold-hour-sunrise-morning-2d-illustration_67092-1111.jpg);
   
   -webkit-background-clip: text;
 /*   -webkit-text-fill-color: transparent; */
