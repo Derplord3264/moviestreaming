@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #121212;
@@ -14,17 +14,85 @@ body {
   flex-direction: column;
 }
 
-.welcome-section {
+header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
   text-align: center;
+  padding: 4rem 0;
+  background-color: #1f1f1f;
 }
 
-h2 {
-  margin-bottom: 2rem;
+header h1 {
+  font-size: 3rem;
+}
+
+header h2 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.kotext {
+  font: bold 10rem 'Helvetica', Sans-serif;
+  text-align: center;
+  background-image: url(https://img.freepik.com/premium-photo/amazing-landscapes-view-mountain-with-gold-hour-sunrise-morning-2d-illustration_67092-1111.jpg);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.featured-movies {
+  background-color: #282828;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#featuredMovieList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movieTile {
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s, perspective 0.2s, transform-origin 0.2s;
+  width: 200px;
+  cursor: pointer;
+}
+
+.movieTile:hover {
+  transform: perspective(500px) rotateX(-5deg) rotateY(5deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transform-origin: center;
+}
+
+.movieTile:hover .movieTitle {
+  color: #ff9900;
+}
+
+.movieTile:active {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.moviePoster {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.movieTitle {
+  padding: 1rem;
+  text-align: center;
+  transition: color 0.3s;
 }
 
 button {
@@ -55,10 +123,6 @@ footer {
   margin-top: auto;
 }
 
-.kotext {
-  font: bold 5rem 'Helvetica', Sans-serif;
-  text-align: center;
-  background-image: url(https://img.freepik.com/premium-photo/amazing-landscapes-view-mountain-with-gold-hour-sunrise-morning-2d-illustration_67092-1111.jpg);
-  -webkit-background-clip: text;
-  color: transparent;
+footer p {
+  margin: 0;
 }
