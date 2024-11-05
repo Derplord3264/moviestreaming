@@ -8,7 +8,6 @@ const movies = [
     { title: "John Wick: Chapter 4", poster: "posters/johnwick4.jpg", path: "movies/johnwick4/index.html" },
     { title: "Dune", poster: "posters/dune1.jpg", path: "movies/dune1/index.html" },
     { title: "Dune: Part Two", poster: "posters/dune2.jpg", path: "movies/dune2/index.html" },
-    { title: "Finding Nemo", poster: "posters/nemo.jpg", path: "movies/nemo/index.html" },
     { title: "Inside Out 2", poster: "posters/insideout2.jpg", path: "movies/insideout2/index.html" },
     { title: "The Matrix", poster: "posters/matrix.jpg", path: "movies/matrix/index.html" },
     { title: "Monty Python and the Holy Grail", poster: "posters/holygrail.jpg", path: "movies/holygrail/index.html" },
