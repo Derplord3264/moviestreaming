@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Wick: Chapter 2 | freemovies</title>
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+    <script defer src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,6 +60,7 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+            padding-top: 5vh;
         }
 
         video {
@@ -105,6 +108,11 @@
             padding: 1rem;
             text-align: center;
         }
+
+        #movie {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
     </style>
 </head>
 <body>
@@ -117,12 +125,18 @@
     <main class="movieDetails">
         <div class="description">
             <h2>Movie Description</h2>
-            <p>"John Wick: Chapter 2" is the 2017 sequel to the highly acclaimed action thriller "John Wick." Directed by Chad Stahelski, the film once again stars Keanu Reeves as the legendary hitman John Wick. Following the events of the first film, John is pulled back into the criminal underworld due to an unpaid blood oath, forcing him to honor a commitment to an Italian crime lord. His mission takes him to Rome, where he faces a slew of deadly assassins and embarks on a relentless fight for survival. With its signature blend of high-octane action, intricate fight choreography, and a deeper dive into the shadowy world of assassins, "John Wick: Chapter 2" expands the franchise's mythology while delivering non-stop excitement.</p>
+            <p>placeholder</p>
         </div>
         <div class="moviePlayer">
-            <video controls>
+            <video id="movie"
+                class="video-js"
+                controls
+                preload="auto"
+                width="1280"
+                height="720" 
+                data-setup="{}"
+            >
                 <source src="playlist.m3u8" type="application/x-mpegURL">
-                Your browser does not support the video tag.
             </video>
         </div>
     </main>
