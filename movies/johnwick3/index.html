@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Wick 3 | freemovies</title>
+    <title>John Wick: Chapter 3 - Parabellum | freemovies</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,11 +20,44 @@
             text-align: center;
         }
 
+        .hero {
+            width: 100%;
+            height: 50vh;
+            background-image: url('../../posters/johnwick3-large.jpg'); /* Replace with your hero image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .movieDetails {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .description {
+            width: 80%;
+            background-color: #1f1f1f;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 2rem;
+        }
+
         .moviePlayer {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80vh;
+            width: 100%;
         }
 
         video {
@@ -76,12 +109,19 @@
 </head>
 <body>
     <header>
-        <h1>John Wick 3</h1>
+        <h1>freemovies</h1>
     </header>
-    <main>
+    <div class="hero">
+        <h1>John Wick: Chapter 3 - Parabellum</h1>
+    </div>
+    <main class="movieDetails">
+        <div class="description">
+            <h2>Movie Description</h2>
+            <p>"John Wick: Chapter 3 – Parabellum" is the third installment in the action-packed series, directed by Chad Stahelski and released in 2019. Keanu Reeves returns as the formidable hitman John Wick, who is now on the run with a $14 million bounty on his head after killing a member of the international assassin's guild. Banished from the underworld’s sanctuary and without the protection of its network, John must fight his way through a relentless wave of the world's most ruthless killers. Featuring elaborate fight sequences, stunning choreography, and an expansion of the franchise's intricate mythos, "Parabellum" raises the stakes even higher, delivering relentless thrills and an edge-of-your-seat experience.</p>
+        </div>
         <div class="moviePlayer">
             <video controls>
-                <source src="johnwick3.mp4" type="video/mp4">
+                <source src="playlist.m3u8" type="application/x-mpegURL">
                 Your browser does not support the video tag.
             </video>
         </div>
