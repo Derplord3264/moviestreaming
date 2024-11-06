@@ -13,7 +13,7 @@ const movies = [
     { title: "Monty Python and the Holy Grail", poster: "posters/holygrail.jpg", path: "movies/holygrail/index.html" },
     { title: "No Time to Die", poster: "posters/notimetodie.jpg", path: "movies/notimetodie/index.html" },
     { title: "The Imitation Game", poster: "posters/imitationgame.jpg", path: "movies/imitationgame/index.html" },
-    { title: "Cunk on Earth", poster: "posters/cunkearth.jpg", path: "series/cunkearth/index.html" }
+//    { title: "Cunk on Earth", poster: "posters/cunkearth.jpg", path: "series/cunkearth/index.html" }
 ];
 
 const movieList = document.getElementById('movieList');
