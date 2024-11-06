@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Wick: Chapter 3 - Parabellum | freemovies</title>
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+    <script defer src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,6 +60,7 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+            padding-top: 5vh;
         }
 
         video {
@@ -105,6 +108,11 @@
             padding: 1rem;
             text-align: center;
         }
+
+        #movie {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
     </style>
 </head>
 <body>
@@ -117,12 +125,18 @@
     <main class="movieDetails">
         <div class="description">
             <h2>Movie Description</h2>
-            <p>"John Wick: Chapter 3 – Parabellum" is the third installment in the action-packed series, directed by Chad Stahelski and released in 2019. Keanu Reeves returns as the formidable hitman John Wick, who is now on the run with a $14 million bounty on his head after killing a member of the international assassin's guild. Banished from the underworld’s sanctuary and without the protection of its network, John must fight his way through a relentless wave of the world's most ruthless killers. Featuring elaborate fight sequences, stunning choreography, and an expansion of the franchise's intricate mythos, "Parabellum" raises the stakes even higher, delivering relentless thrills and an edge-of-your-seat experience.</p>
+            <p>placeholder</p>
         </div>
         <div class="moviePlayer">
-            <video controls>
+            <video id="movie"
+                class="video-js"
+                controls
+                preload="auto"
+                width="1280"
+                height="720" 
+                data-setup="{}"
+            >
                 <source src="playlist.m3u8" type="application/x-mpegURL">
-                Your browser does not support the video tag.
             </video>
         </div>
     </main>
