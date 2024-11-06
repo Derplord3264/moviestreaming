@@ -20,11 +20,44 @@
             text-align: center;
         }
 
+        .hero {
+            width: 100%;
+            height: 50vh;
+            background-image: url('../../posters/oppeheimer-large.jpg'); /* Replace with your hero image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .movieDetails {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .description {
+            width: 80%;
+            background-color: #1f1f1f;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 2rem;
+        }
+
         .moviePlayer {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80vh;
+            width: 100%;
         }
 
         video {
@@ -76,12 +109,19 @@
 </head>
 <body>
     <header>
-        <h1>Oppenheimer</h1>
+        <h1>freemovies</h1>
     </header>
-    <main>
+    <div class="hero">
+        <h1>Oppenheimer</h1>
+    </div>
+    <main class="movieDetails">
+        <div class="description">
+            <h2>Movie Description</h2>
+            <p>"Oppenheimer" is a 2023 epic biographical thriller film directed by Christopher Nolan. The film dramatizes the life of J. Robert Oppenheimer, the American theoretical physicist who played a pivotal role in the development of the first nuclear weapons during World War II. Starring Cillian Murphy as Oppenheimer, the movie explores his scientific achievements, his leadership of the Los Alamos Laboratory, and the moral dilemmas he faced. The ensemble cast includes Emily Blunt, Matt Damon, Robert Downey Jr., and Florence Pugh. Known for its stunning cinematography and gripping narrative, "Oppenheimer" has been praised for its historical accuracy and emotional depth.</p>
+        </div>
         <div class="moviePlayer">
             <video controls>
-                <source src="oppenheimer.mp4" type="video/mp4">
+                <source src="playlist.m3u8" type="application/x-mpegURL">
                 Your browser does not support the video tag.
             </video>
         </div>
