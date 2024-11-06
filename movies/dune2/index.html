@@ -20,11 +20,44 @@
             text-align: center;
         }
 
+        .hero {
+            width: 100%;
+            height: 50vh;
+            background-image: url('../../posters/dune2-large.jpg'); /* Replace with your hero image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .movieDetails {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .description {
+            width: 80%;
+            background-color: #1f1f1f;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 2rem;
+        }
+
         .moviePlayer {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80vh;
+            width: 100%;
         }
 
         video {
@@ -76,12 +109,19 @@
 </head>
 <body>
     <header>
-        <h1>Dune 2</h1>
+        <h1>freemovies</h1>
     </header>
-    <main>
+    <div class="hero">
+        <h1>Dune 2</h1>
+    </div>
+    <main class="movieDetails">
+        <div class="description">
+            <h2>Movie Description</h2>
+            <p>placeholder</p>
+        </div>
         <div class="moviePlayer">
             <video controls>
-                <source src="dune2.mp4" type="video/mp4">
+                <source src="playlist.m3u8" type="application/x-mpegURL">
                 Your browser does not support the video tag.
             </video>
         </div>
