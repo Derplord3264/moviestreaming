@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Wick | freemovies</title>
+    <title>John Wick: Chapter 1 | freemovies</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,11 +20,44 @@
             text-align: center;
         }
 
+        .hero {
+            width: 100%;
+            height: 50vh;
+            background-image: url('../../posters/johnwick1-large.jpg'); /* Replace with your hero image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .movieDetails {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .description {
+            width: 80%;
+            background-color: #1f1f1f;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 2rem;
+        }
+
         .moviePlayer {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80vh;
+            width: 100%;
         }
 
         video {
@@ -76,12 +109,19 @@
 </head>
 <body>
     <header>
-        <h1>John Wick</h1>
+        <h1>freemovies</h1>
     </header>
-    <main>
+    <div class="hero">
+        <h1>John Wick: Chapter 1</h1>
+    </div>
+    <main class="movieDetails">
+        <div class="description">
+            <h2>Movie Description</h2>
+            <p>"John Wick: Chapter 1" is a 2014 action thriller directed by Chad Stahelski and starring Keanu Reeves as the titular character. The film follows the story of John Wick, a retired hitman seeking vengeance for the death of his beloved dog, a final gift from his deceased wife. His quest for revenge plunges him back into the dark, violent underworld he had left behind, leading to a relentless and stylishly choreographed series of confrontations with old associates and dangerous adversaries. With its intense action sequences, gripping storyline, and Reeves' compelling performance, "John Wick: Chapter 1" has become a modern classic in the action genre.</p>
+        </div>
         <div class="moviePlayer">
             <video controls>
-                <source src="johnwick1.mp4" type="video/mp4">
+                <source src="playlist.m3u8" type="application/x-mpegURL">
                 Your browser does not support the video tag.
             </video>
         </div>
