@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oppenheimer | freemovies</title>
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+    <script defer src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,6 +60,7 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+            padding-top: 5vh;
         }
 
         video {
@@ -105,6 +108,11 @@
             padding: 1rem;
             text-align: center;
         }
+
+        #movie {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
     </style>
 </head>
 <body>
@@ -117,12 +125,18 @@
     <main class="movieDetails">
         <div class="description">
             <h2>Movie Description</h2>
-            <p>"Oppenheimer" is a 2023 epic biographical thriller film directed by Christopher Nolan. The film dramatizes the life of J. Robert Oppenheimer, the American theoretical physicist who played a pivotal role in the development of the first nuclear weapons during World War II. Starring Cillian Murphy as Oppenheimer, the movie explores his scientific achievements, his leadership of the Los Alamos Laboratory, and the moral dilemmas he faced. The ensemble cast includes Emily Blunt, Matt Damon, Robert Downey Jr., and Florence Pugh. Known for its stunning cinematography and gripping narrative, "Oppenheimer" has been praised for its historical accuracy and emotional depth.</p>
+            <p>kaboom</p>
         </div>
         <div class="moviePlayer">
-            <video controls>
+            <video id="movie"
+                class="video-js"
+                controls
+                preload="auto"
+                width="1280"
+                height="720" 
+                data-setup="{}"
+            >
                 <source src="playlist.m3u8" type="application/x-mpegURL">
-                Your browser does not support the video tag.
             </video>
         </div>
     </main>
