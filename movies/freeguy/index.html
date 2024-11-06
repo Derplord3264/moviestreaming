@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Guy | freemovies</title>
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+    <script defer src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,6 +60,7 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+            padding-top: 5vh;
         }
 
         video {
@@ -105,6 +108,11 @@
             padding: 1rem;
             text-align: center;
         }
+
+        #movie {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
     </style>
 </head>
 <body>
@@ -117,12 +125,18 @@
     <main class="movieDetails">
         <div class="description">
             <h2>Movie Description</h2>
-            <p>"Free Guy" is a 2021 science fiction action comedy film directed by Shawn Levy. The story centers on Guy, a cheerful bank teller played by Ryan Reynolds, who gradually realizes he is a non-playable character (NPC) within a violent, open-world video game. As he becomes self-aware, he gains the ability to alter his environment, challenging the game's conventions and disrupting the system established by its creator. The film offers a humorous and heartwarming exploration of identity, purpose, and free will in a digital world, blending action-packed sequences with witty dialogue and engaging character development.</p>
+            <p>placeholder</p>
         </div>
         <div class="moviePlayer">
-            <video controls>
+            <video id="movie"
+                class="video-js"
+                controls
+                preload="auto"
+                width="1280"
+                height="720" 
+                data-setup="{}"
+            >
                 <source src="playlist.m3u8" type="application/x-mpegURL">
-                Your browser does not support the video tag.
             </video>
         </div>
     </main>
